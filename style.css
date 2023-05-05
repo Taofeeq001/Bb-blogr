@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;1,300&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;600&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    background: url(./images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(13, 100%, 72%);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-bottom-left-radius: 70px;
+    margin-bottom: 30px;
+
+}
+.desk-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+.left, .btns, .right{
+    display: flex;
+}
+.left{
+    align-items: center;
+    
+}
+.right{
+    gap: 40px;
+    align-items: center;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+}
+.but button a{
+    color: hsl(355, 100%, 74%);
+}
+.right button{
+    padding: 10px;
+    background-color: white;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.btns, .left{
+    gap: 40px;
+}
+.dropdown-btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.dropdown-btn:hover{
+    text-decoration: underline;
+}
+.dropdown-contents{
+    background-color: white;
+    line-height: 30px;
+    max-width: 120px;
+    position: absolute;
+    padding: 3px;
+    border-radius: 10px;
+    display: none;
+}
+.dropdown-contents a:hover{
+    color: black;
+    font-weight: 600;
+}
+.dropdown-contents a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown:hover .arrow{
+    transform: rotateX(180deg);
+}
+.dropdown:hover .dropdown-contents{
+    display: block;
+}
+.heading{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.heading h2{
+    margin-top: 35px;
+    font-size: 45px;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+.head-btn{
+    gap: 20px;
+    display: flex;
+    margin-bottom: 40px;
+}
+.head-btn .first{
+    background-color: white;
+    color: hsl(355, 100%, 74%);
+    font-weight: bolder;
+    font-family: Poppins, sans-serif;
+}
+.head-btn .first:hover{
+    background-color: transparent;
+    color: white;
+}
+.head-btn .sec{
+    color: white;
+    font-weight: bolder;
+    font-family: Poppins, sans-serif;
+}
+
+.head-btn button{
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 16px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.sec:hover{
+    background-color: white;
+    color: hsl(355, 100%, 74%);;
+}
+.hero2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+
+}
+.hero2-content{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.right-sub{
+    display: none;
+}
+.Introducing{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20rem;
+}
+.infrastructure{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    padding: 9rem 0;
+    background: url(./images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-size: 45%;
+    background-position-x: 10%;
+    background-color: hsl(240, 10%, 16%);
+    border-bottom-left-radius: 80px; 
+    border-top-right-radius: 80px; 
+
+}
+.phone{
+    position: absolute;
+    left: 10%;
+    top: 145%;
+}
+.state{
+    width: 35%;
+    margin-left: 50rem;
+    color: white;
+
+}
+.right-bg img{
+    width: 100%;
+    transform: translateX(30%);
+}
+.hero3{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.fcontent1, .fcontent2{
+    width: 70%;
+}
+.hero3-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    font-family: Poppins, sans-serif;
+}
+.lap-desk{
+    width: 100%;
+    transform: translateX(-30%);
+}
+.lap-mobile{
+    display: none;
+}
+
+footer{
+    background-color: hsl(237, 23%, 32%);
+    padding: 4rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top-right-radius: 70px;
+}
+.foot-cont{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins, sans-serif;
+}
+.foot-cont a, .foot-cont h3{
+    text-decoration: none;
+    color: white;
+}
+.foot-cont a:hover{
+    text-decoration: underline;
+}
+.mobile-head{
+    display: none;
+}
+.close{
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    body{
+        width: 100%;
+        gap: 20px;
+    }
+    .hero{
+        padding: 20px;
+    }
+    .desk-nav{
+        display: none;
+    }
+    .mobile-head{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger button{
+        background-color: transparent;
+        border: none;
+    }
+    .mobile-nav{
+        display: block;
+        background-color: white;
+        width: 80%;
+        align-items: center;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 0;
+        top: 7%;
+        position: absolute;
+        transition: 1s ease-in;
+    }
+    .display{
+        height: 50vh;
+        transition: 1s ease-in;
+    }
+
+    .nav-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-nav .btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .btns button{
+        color: black;
+        font-family: Poppins, sans-serif;
+        font-weight: 800px;
+
+    }
+    .right{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+        margin-bottom: 40px;
+        width: 80%;
+        border-top: 2px solid grey;
+    }
+    .right a{
+        color: black;
+    }
+    .ppp{
+        margin-top: 20px;
+    }
+    .dropdown{
+        margin-bottom: 60px;
+    }
+    .dropdown-contents{
+        background-color: lightgrey;
+        padding: 10px 20px;
+    }
+    .but button{
+        background: linear-gradient(90deg,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .but button a{
+        color: white;
+        font-family: Poppins, sans-serif;
+    }
+    .hero{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .heading h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .heading p{
+        margin-bottom: 40px;
+    }
+   .hero2{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+   }
+   .hero2-content{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-bottom: 17rem;
+   }
+   .right-bg{
+        display: none;
+   }
+   .right-sub{
+        display: block;
+   }
+   .Introducing{
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }  
+    .right-bg{
+        transform: translateX(-32%);
+    } 
+    .infrastructure{
+        flex-direction: column;
+        width: 100%;
+    }
+    .state{
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+        color: white;
+    }
+    .phone{
+        position: absolute;
+        width: 90%;
+        top: 155%;
+        left: 5%
+    }
+    .infrastructure{
+        background-position: top;
+        background-size: 100%;
+        background-position-y: 10%;
+    }
+    .hero3{
+        width: 100%;
+        flex-direction: column;
+    }
+    .lap-mobile{
+        display: block;
+    }
+    .lap-desk{
+        display: none;
+    }
+  
+    .hero3-content{
+        width: 100%;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .fcontent1, .fcontent2{
+        width: 100%;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        color: white;
+        gap: 20px;
+    }
+    .foot-cont a{
+        color: white;
+    }
+    
+}
